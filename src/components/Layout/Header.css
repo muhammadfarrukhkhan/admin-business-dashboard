@@ -1,0 +1,83 @@
+.app-header {
+  height: 72px;
+  padding: 0 18px 0 24px;
+  background: rgba(15, 23, 42, 0.20);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: none;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.header-title h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #f8fafc;
+  letter-spacing: -0.04em;
+}
+
+.header-user {
+  display: flex;
+  align-items: center;
+}
+
+.header-user .ant-dropdown-trigger {
+  cursor: pointer;
+}
+
+.header-user .ant-space {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-info {
+  text-align: right;
+  line-height: 1.2;
+}
+
+.user-name {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #f8fafc;
+}
+
+.user-role {
+  margin: 0;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.header-user .ant-avatar {
+  width: 38px !important;
+  height: 38px !important;
+  min-width: 38px !important;
+  background: linear-gradient(135deg, #f9a8d4 0%, #7dd3fc 100%);
+  border: 2px solid rgba(255, 255, 255, 0.32);
+  box-shadow: 0 8px 18px rgba(125, 211, 252, 0.25);
+  color: #0f172a;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .app-header {
+    height: 66px;
+    padding: 0 16px;
+  }
+
+  .header-title h1 {
+    font-size: 18px;
+  }
+
+  .user-info {
+    display: none;
+  }
+}

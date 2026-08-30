@@ -1,0 +1,47 @@
+{
+  "name": "business-admin-dashboard",
+  "version": "1.0.0",
+  "description": "Professional Business Admin Dashboard built with React, Redux Toolkit, and Ant Design",
+  "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.1.3",
+    "@reduxjs/toolkit": "^1.9.7",
+    "antd": "^5.11.0",
+    "@ant-design/icons": "^5.2.6",
+    "recharts": "^2.10.3",
+    "axios": "^1.6.2",
+    "react-router-dom": "^6.17.0",
+    "dayjs": "^1.11.10",
+    "classnames": "^2.3.2"
+  },
+  "devDependencies": {
+    "react-scripts": "5.0.1",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

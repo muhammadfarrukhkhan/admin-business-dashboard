@@ -1,0 +1,149 @@
+.data-table {
+  background: rgba(15, 23, 42, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  padding: 18px 18px 12px;
+  box-shadow: 0 18px 35px rgba(15, 23, 42, 0.18);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.table-header h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+.data-table .ant-btn-primary {
+  background: linear-gradient(135deg, rgba(124, 156, 255, 0.9) 0%, rgba(78, 167, 255, 0.85) 100%);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(94, 132, 255, 0.18);
+}
+
+.data-table .ant-btn-primary:hover,
+.data-table .ant-btn-primary:focus {
+  background: linear-gradient(135deg, rgba(139, 167, 255, 0.95) 0%, rgba(96, 180, 255, 0.9) 100%) !important;
+  border: none !important;
+  box-shadow: 0 12px 24px rgba(94, 132, 255, 0.24) !important;
+}
+
+.data-table .ant-btn-dangerous {
+  background: linear-gradient(135deg, rgba(248, 113, 113, 0.88) 0%, rgba(239, 68, 68, 0.85) 100%);
+  border: none;
+}
+
+.data-table .ant-btn-dangerous:hover,
+.data-table .ant-btn-dangerous:focus {
+  background: linear-gradient(135deg, rgba(251, 113, 133, 0.92) 0%, rgba(244, 63, 94, 0.9) 100%) !important;
+  border: none !important;
+  box-shadow: 0 8px 18px rgba(239, 68, 68, 0.22) !important;
+}
+
+.data-table .ant-table {
+  background: transparent;
+  color: #e5e7eb;
+}
+
+.data-table .ant-table-container {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.data-table .ant-table-thead > tr > th {
+  background: rgba(148, 163, 184, 0.08);
+  color: #e5e7eb;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  font-weight: 700;
+}
+
+.data-table .ant-table-tbody > tr > td {
+  background: rgba(15, 23, 42, 0.10);
+  color: #e5e7eb;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.2s ease;
+}
+
+.data-table .ant-table-tbody > tr {
+  transition: all 0.2s ease;
+}
+
+.data-table .ant-table-tbody > tr:hover > td,
+.data-table .ant-table-tbody > tr.ant-table-row:hover > td {
+  background: linear-gradient(90deg, rgba(139, 92, 246, 0.26) 0%, rgba(59, 130, 246, 0.18) 100%) !important;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.07);
+}
+
+.data-table .ant-table-tbody > tr:hover > td:first-child,
+.data-table .ant-table-tbody > tr.ant-table-row:hover > td:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.data-table .ant-table-tbody > tr:hover > td:last-child,
+.data-table .ant-table-tbody > tr.ant-table-row:hover > td:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.data-table .ant-table-tbody > tr:last-child > td {
+  border-bottom: none;
+}
+
+.data-table .ant-pagination {
+  margin-top: 16px;
+}
+
+.data-table .ant-pagination-item,
+.data-table .ant-pagination-prev,
+.data-table .ant-pagination-next,
+.data-table .ant-pagination-options {
+  background: rgba(15, 23, 42, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #e5e7eb;
+}
+
+.data-table .ant-pagination-item:hover,
+.data-table .ant-pagination-prev:hover,
+.data-table .ant-pagination-next:hover,
+.data-table .ant-pagination-item-active {
+  border-color: rgba(147, 197, 253, 0.7) !important;
+  background: linear-gradient(135deg, rgba(124, 156, 255, 0.16) 0%, rgba(78, 167, 255, 0.14) 100%) !important;
+  box-shadow: 0 0 0 1px rgba(147, 197, 253, 0.18);
+}
+
+.data-table .ant-pagination-item a,
+.data-table .ant-pagination-item-link,
+.data-table .ant-pagination-prev button,
+.data-table .ant-pagination-next button {
+  color: #e5e7eb;
+}
+
+.data-table .ant-pagination-item-active a {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .data-table {
+    padding: 12px;
+  }
+
+  .table-header {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .table-header button {
+    width: 100%;
+  }
+}
